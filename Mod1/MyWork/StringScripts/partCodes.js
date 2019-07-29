@@ -5,20 +5,30 @@
 */
 "use strict";
 
-//gets supplier code (before ":")
+/*
+* This function gets the Supplier Code by parsing parameter
+* @pos (Number) - Gets position of separator to use for parsing
+*/
 function getSupplier(code) {
     let pos = code.indexOf(":");
     return "Code: " + code.substring(0, pos);
 }
 
-//gets product number (after ":" and before "-")
+/*
+* This function gets the Product Number by parsing parameter
+* @pos1 (Number) - Gets position of separator to use for parsing
+* @pos2 (Number) - Gets position of separator to use for parsing
+*/
 function getProductNumber(code) {
     let pos1 = code.indexOf(":");
     let pos2 = code.indexOf("-");
     return "Product Number: " + code.slice(pos1+1, pos2);
 }
 
-//gets size (after "-")
+/*
+* This function gets the Size by parsing parameter
+* @pos (Number) - Gets position of separator to use for parsing
+*/
 function getSize(code) {
     let pos = code.indexOf("-");
     return "Size: " + code.substr(pos+1);
