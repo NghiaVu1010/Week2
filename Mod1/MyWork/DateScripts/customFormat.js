@@ -1,5 +1,5 @@
 /*
-* Description: Gets DOB and prints
+* Description: Returns function in custom format
 *
 * Author: Neo
 */
