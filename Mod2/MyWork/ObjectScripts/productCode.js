@@ -34,8 +34,6 @@ function getSize(code) {
     return code.substr(pos+1);
 }
 
-let suppCode = "ACME:123-L";
-
 /*
 * This function parses the code and calls other functions
 * @code (Array) - Contains the parsed object
@@ -48,5 +46,13 @@ function parsePartCode(partCode) {
     return code;
 }
 
-let part1 = parsePartCode(suppCode);
-console.log(`Supplier: ${part1.supplierCode}\nProduct Number: ${part1.productNumber}\nSize: ${part1.size}`);
+let suppCode = ["ACME:123-L", "DI:124-5"];
+
+function printCodes() {
+    for(var i = 0; i < suppCode.length; i++) {
+        let part1 = parsePartCode(suppCode[i]);
+        console.log(`Supplier: ${part1.supplierCode}\nProduct Number: ${part1.productNumber}\nSize: ${part1.size}`);
+    }
+}
+
+printCodes();
