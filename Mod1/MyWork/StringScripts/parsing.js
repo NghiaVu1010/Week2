@@ -32,7 +32,7 @@ function parseAndDisplayName (name) {
     if (arrName.length < 2) {
         fName = arrName[0];
 
-        msg = `Name: ${name}\nOnly Name: ${fName}`;    
+        msg = `Name: ${name}\nOnly Name: ${fName}`;
     }
     else if (arrName.length < 3) {
         fName = arrName[0];
