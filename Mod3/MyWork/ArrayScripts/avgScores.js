@@ -33,13 +33,14 @@ function getMedian(scores) {
         return isEven / 2;
     }
     else {
-        let isOdd = scores[Math.round(scores.length-1) / 2];
+        //let isOdd = scores[Math.round(scores.length-1) / 2];
+        let isOdd = scores[(scores.length-1) / 2];
         return isOdd;
     }
 }
 
 function getReport() {
-    let grade = [100, 50, 75, 25, 80, 20, 51, 50];
+    let grade = [99, 100, 93, 91, 86, 93, 87];
     grade = sortArray(grade);
     
     let median = getMedian(grade);
