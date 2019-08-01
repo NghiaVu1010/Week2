@@ -10,7 +10,7 @@ window.onload = function()
     const priceBtn = document.getElementById("priceBtn");
     priceBtn.onclick = calculateTotal;
     
-    //const incorrectNum = document.getElementById("incorrectNum");
+    const incorrectNum = document.getElementById("incorrectNum");
 
     function calculateTotal() {
         //grab each of the values and assigns value
@@ -47,7 +47,7 @@ window.onload = function()
     resetBtn.onclick = function() {
         incorrectNum.style.display = 'none';
 
-        // Put cursor in First Name field
+        // Put cursor in scoop field
         document.getElementById('scoopForm').focus();
     }
 };
