@@ -21,6 +21,17 @@
         <fieldset class="col-4 offset-4">
           <legend>ACME Car Rental</legend>
           
+          <!-- Car Selector -->
+          <label for="carTypeField">Choose car type</label>
+          <select class="custom-select mb-2" id="carTypeField">
+            <option selected>Choose...</option>
+            <option value="1">Economy</option>
+            <option value="2">Compact</option>
+            <option value="3">Intermediate</option>
+            <option value="4">Full Size</option>
+          </select>
+
+          <!-- Fields for Car Rental -->
           <label for="pickUpField">Pick up date: <input type="date" id="pickUpField" name="pickUpField" required="required" min="2019-08-01" /></label>
           <label for="daysField">Number of days: <input type="number" id="daysField" name="daysField" required="required" min="1" /></label>
 
@@ -41,12 +52,13 @@
 
           <div class="my-3">
             <!-- Calculate button-->
-            <input type="button" class="btn btn-outline-success" id="calculateBtn" value="Estimate Total Cost" onclick="" />
+            <input type="button" class="btn btn-outline-success" id="calculateBtn" value="Estimate Total Cost" />
   
             <!-- Reset button-->
             <button type="reset" class="btn btn-outline-secondary" id="resetBtn">Reset</button>
           </div>
 
+          <!-- Output calculations from selections -->
           <div id="allCosts">
             <p class="my-3">Car Rental: <input type="text" id="rentalTotal" disabled/></p>
             <p class="my-3">Options: <input type="text" id="optionsTotal" disabled/></p>

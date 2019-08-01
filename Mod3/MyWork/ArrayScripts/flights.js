@@ -5,7 +5,7 @@
 */
 "use strict";
 
-function findFlight(depart, arrival, date) {
+function findFlight(depart, arrival, day) {
     let flights = [
         {flight: 1, departure: "BDL", arrival: "LAS", time: "0700", price: 495, days: "SASU"},
         {flight: 2, departure: "DCA", arrival: "LAS", time: "0800", price: 595, days: "SASU"},
@@ -18,7 +18,7 @@ function findFlight(depart, arrival, date) {
         {flight: 9, departure: "BDL", arrival: "TKO", time: "2000", price: 355, days: "SASU"},
         {flight: 10, departure: "LAS", arrival: "TKO", time: "2200", price: 705, days: "SASU"}];
     
-    let d = new RegExp(date);
+    let d = new RegExp(day);
     let found = false;
     let matchedFlights = "";
 

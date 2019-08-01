@@ -8,12 +8,3 @@ fieldset {
     padding-right: 0.75em;
     border: 2px groove;
 }
-
-#allCosts {
-    display: none;
-}
-
-#ageMsg {
-    color: #ff0000;
-    display: none;
-}
