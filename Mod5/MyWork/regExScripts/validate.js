@@ -29,6 +29,11 @@ function validateZipcodeArray(array) {
     return str;
 }
 
+/*
+* Validates if zip code is a canadian zip code
+*
+* @param regExp (Reg Exp) - initialize the regExp format
+*/
 function validateZipcode(str) {
     let regExp = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
 
